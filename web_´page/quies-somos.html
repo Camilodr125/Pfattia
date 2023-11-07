@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A'ttia - Quiénes Somos</title>
+</head>
+<body>
+    <header>
+        <h1>A'ttia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.php">Inicio</a></li>
+                
+                <li><div class="dropdown">
+                    <a href="#">Datos históricos</a>
+                    <div id = "historicosDropdown" class="dropdown-content">
+                        <a href="nodo1.php">Nodo 1</a>
+                        <a href="nodo2.php">Nodo 2</a>
+                        <a href="nodo3.php">Nodo 3</a>
+                    </div>
+                </div></li>
+                <li><a href="quienes-somos.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="quienes-somos">
+          
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un grupo de estudiantes de último semestre de la carrera de Ingeniería electrónica. Nos apasiona la innovación, la tecnología y, sobre todo, contribuir a un mundo más sostenible. A'ttia es nuestra iniciativa para aplicar nuestros conocimientos y creatividad en la convergencia de la tecnología y la ecología. </p>
+            <img src="ruta_a_tu_imagen_quienes_somos.jpg" alt="Imagen Quiénes Somos">
+        </section>
+
+        <section id="lo-que-hacemos">
+          
+            <h2>Lo que Hacemos</h2>
+            <p>Desarrollamos un proyecto que consta de un sistema de monitoreo continuo y de riego automatizado diseñado específicamente para el vivero de ecocampus. Este sistema integra diferentes tecnologías para garantizar un manejo eficiente de los recursos hídricos y la salud de las plantas.Nuestra misión es contribuir al desarrollo de prácticas agrícolas más amigables con el entorno.</p>
+            <img src="ruta_a_tu_imagen_lo_que_hacemos.jpg" alt="Imagen Lo que Hacemos">
+            
+        </section>
+
+        <section id="vision-ambiental">
+          
+            <h2>Visión Ambiental</h2>
+            <p>Nuestra visión se centra en la creación de un entorno donde el cuidado de las plantas y el consumo responsable del agua sean pilares fundamentales. Creemos en una unión entre la naturaleza y la tecnología, donde cada gota de agua se utiliza con responsabilidad y se valora como un recurso esencial. Alentamos a comunidades, agricultores y a la sociedad en general a adoptar prácticas eco-amigables para preservar nuestro planeta y asegurar un futuro sostenible para las generaciones venideras.</p>
+            <img src="ruta_a_tu_imagen_vision_ambiental.jpg" alt="Imagen Visión Ambiental">
+        </section>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('historicosDropdown');
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2023 A'ttia. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
